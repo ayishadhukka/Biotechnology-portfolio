@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayisha Dhukka | Biotechnology | QC • QA • Research</title>
+<meta name="description" content="Portfolio of Ayisha Akbar Dhukka, Biotechnology student (2027) seeking QC, QA, research and life science roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#05060f; --bg2:#0a1128; --card:#0f1733; --purple:#4b2a7b; --purple2:#2d1b4e;
+  --accent:#b9a6f0; --ice:#9fc5ff; --text:#e8eaf6; --muted:#a3a9c7; --line:rgba(185,166,240,.15);
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#05060f;--text:#e8eaf6}}
+:root[data-theme="dark"]{--bg:#05060f;--text:#e8eaf6}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,var(--bg),var(--bg2) 45%,var(--bg));color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.7;font-weight:300}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;margin:0 0 .5em;color:#fff}
+a{color:var(--ice);text-decoration:none}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;background:rgba(5,6,15,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:rgba(5,6,15,.85)}
+nav .logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:#fff}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav a{color:var(--muted);font-size:.88rem;white-space:nowrap}
+nav a:hover{color:var(--accent)}
+section{padding:80px 5vw;max-width:1100px;margin:auto}
+.sub{color:var(--accent);letter-spacing:.2em;font-size:.75rem;text-transform:uppercase;font-weight:500}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hero svg{position:absolute;right:-40px;top:50%;transform:translateY(-50%);width:min(420px,70vw);opacity:.12;z-index:0}
+.hero>*:not(svg){position:relative;z-index:1}
+.hero h1{font-size:clamp(2.4rem,7vw,4.2rem);line-height:1.1}
+.hero h1 span{background:linear-gradient(90deg,var(--ice),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:560px;color:var(--muted);font-size:1.05rem}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.btn{padding:12px 28px;border-radius:30px;font-weight:500;font-size:.92rem;border:1px solid var(--accent);transition:.3s;cursor:pointer;font-family:inherit}
+.btn.primary{background:linear-gradient(135deg,var(--purple),#6a3fb0);color:#fff;border-color:transparent}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:hover{box-shadow:0 0 24px rgba(155,120,230,.4);transform:translateY(-2px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:linear-gradient(160deg,var(--card),rgba(45,27,78,.35));border:1px solid var(--line);border-radius:16px;padding:24px;transition:.3s}
+.card:hover{box-shadow:0 0 28px rgba(120,90,200,.25);transform:translateY(-3px)}
+.card h3{font-size:1.1rem;color:var(--ice)}
+.card p,.card li{color:var(--muted);font-size:.93rem;margin:.3em 0}
+.card ul{padding-left:18px;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{padding:6px 14px;border-radius:20px;background:rgba(75,42,123,.35);border:1px solid var(--line);font-size:.82rem;color:var(--text)}
+.timeline{border-left:2px solid var(--purple);padding-left:22px}
+.timeline .card{margin-bottom:16px}
+.ph{color:#d9c9ff;font-style:italic}
+form{display:grid;gap:14px}
+input,textarea{width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);font:inherit}
+input:focus,textarea:focus{outline:none;border-color:var(--accent)}
+.contact-list p{margin:.4em 0}
+footer{text-align:center;padding:36px 5vw;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+#top{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:42px;height:42px;border-radius:50%;border:1px solid var(--accent);background:var(--purple2);color:#fff;cursor:pointer;opacity:0;pointer-events:none;transition:.3s}
+#top.show{opacity:1;pointer-events:auto}
+.fade{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s}
+.fade.in{opacity:1;transform:none}
+#bact3d,#gene3d{height:260px;margin:12px 0;border-radius:16px;border:1px solid var(--line);background:radial-gradient(circle at 50% 40%,rgba(75,42,123,.35),rgba(5,6,15,.9));cursor:grab;touch-action:pan-y;overflow:hidden}
+button.chip{font:inherit;font-size:.82rem;cursor:pointer;color:var(--text)}
+button.chip:hover{border-color:var(--accent)}
+button.chip.on{background:rgba(122,92,255,.5);border-color:var(--accent)}
+.binfo{margin-top:12px;padding:12px 14px;border-radius:12px;background:rgba(5,6,15,.5);border:1px solid var(--line);font-size:.88rem;line-height:1.6;color:var(--muted)}
+.binfo b{color:var(--ice)}
+#gene3d{height:340px}
+@media(max-width:640px){nav ul{gap:14px}nav .logo{display:none}section{padding:60px 5vw}}
+</style>
+</head>
+<body>
+<nav>
+  <span class="logo">Ayisha Dhukka</span>
+  <ul>
+    <li><a href="#about">About</a></li><li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li>
+    <li><a href="#careers">Careers</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <!-- Subtle DNA motif -->
+  <svg viewBox="0 0 200 400" fill="none" stroke="#b9a6f0" stroke-width="2" aria-hidden="true">
+    <path d="M40 10C160 70 160 130 40 190S-80 310 40 390"/><path d="M160 10C40 70 40 130 160 190S280 310 160 390"/>
+    <path d="M62 40h76M52 80h96M52 120h96M62 160h76M62 220h76M52 260h96M52 300h96M62 340h76"/>
+  </svg>
+  <span class="sub">Fresher • Life Science Professional</span>
+  <h1>Ayisha Dhukka<br><span>Biotechnology</span></h1>
+  <p>Detail-oriented final-year biotechnology student with hands-on diagnostic lab internship experience, seeking opportunities in <b>Quality Control, Quality Assurance and Research</b>. Eager to contribute to accurate, compliant and meaningful laboratory work.</p>
+  <div class="btns">
+    <a class="btn primary" href="#contact">Contact Me</a>
+    
+  </div>
+</section>
+
+<section id="about" class="fade">
+  <span class="sub">About Me</span><h2>A careful scientist in the making</h2>
+  <p>I am a final-year Biotechnology student at Parul University with hands-on diagnostic lab internship experience and a strong interest in laboratory quality, documentation and research. I enjoy working methodically, following SOPs precisely and learning new techniques. I am looking for an entry-level role where I can grow within QC, QA or research while contributing to reliable, high-quality science.</p><p>My long-term goal is to contribute to impactful research that addresses global challenges in health, agriculture and the environment. I am passionate about applying biotechnology to solve real-world problems.</p>
+</section>
+
+<section id="education" class="fade">
+  <span class="sub">Education</span><h2>Academic background</h2>
+  <div class="card">
+    <h3>Biotechnology</h3>
+    <p>Parul University, Vadodara, Gujarat · Graduating 2027 · Overall CGPA: 7.0</p><p>10th (2021) &amp; 12th (2023), Maharashtra</p><p>Focus areas: molecular biology, genetics and bioprocess engineering.</p>
+    <div class="chips">
+      <span class="chip">Microbiology</span><span class="chip">Molecular Biology</span><span class="chip">Biochemistry</span>
+      <span class="chip">Genetics</span><span class="chip">Immunology</span><span class="chip">Bioprocess Technology</span>
+      <span class="chip">Bioinformatics</span><span class="chip">Cell Biology</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="fade">
+  <span class="sub">Skills</span><h2>What I bring to the lab</h2>
+  <div class="grid">
+    <div class="card"><h3>Laboratory Techniques</h3>
+      <div class="chips"><span class="chip">Aseptic technique</span><span class="chip">Sterilisation</span><span class="chip">Media preparation</span><span class="chip">Phlebotomy &amp; sample collection</span><span class="chip">CBC analyzer (Sysmex)</span><span class="chip">Blood smear (Leishman stain)</span><span class="chip">Urine routine &amp; microscopy</span><span class="chip">ELISA &amp; ECL immunoassay</span><span class="chip">Serology tests</span><span class="chip">PCR / RT-PCR workflow</span><span class="chip">DNA extraction</span><span class="chip">Gel electrophoresis</span><span class="chip">Biosafety cabinet</span></div></div>
+    <div class="card"><h3>Quality &amp; Compliance</h3>
+      <div class="chips"><span class="chip">Daily QC (Levey-Jennings &amp; Westgard rules)</span><span class="chip">Following SOPs</span><span class="chip">Sample labelling &amp; report management</span><span class="chip">LIS-based reporting</span><span class="chip">Biosafety &amp; infection control</span><span class="chip">Patient data confidentiality</span></div></div>
+    <div class="card"><h3>Software</h3>
+      <div class="chips"><span class="chip">MS Excel (data entry, analysis &amp; visualisation)</span><span class="chip">Professional email communication</span></div></div>
+    <div class="card"><h3>Soft Skills</h3>
+      <div class="chips"><span class="chip">Team collaboration</span><span class="chip">Adaptability</span><span class="chip">Growth mindset</span><span class="chip">Discipline &amp; punctuality</span><span class="chip">Eager to learn new tools &amp; techniques</span></div></div>
+  </div>
+</section>
+
+<section id="projects" class="fade">
+  <span class="sub">Projects</span><h2>Lab work &amp; projects</h2>
+  <div class="grid">
+    <div class="card"><h3>SeqLens: FASTA Sequence Analyzer</h3><p>A browser-based bioinformatics tool that opens FASTA files and analyses DNA sequences. Nothing is uploaded anywhere.</p><p><b>Features:</b> GC content profile, ORF detection on all six reading frames, k-mer counts and motif search.</p><p><b>Area:</b> Bioinformatics, sequence analysis</p><p><a href="https://claude.ai/artifact/8bDWJTVYHgt2Xi819JLD8B" target="_blank" rel="noopener">Open the tool →</a></p></div>
+    <div class="card"><h3>3D Model: Inside a Bacterial Cell</h3><p>A simple interactive 3D model of a rod-shaped bacterium (bacillus). Drag to rotate, tap any part to see its name, and tap the nucleoid (DNA) to open the cell and look inside. Use the + and − buttons (or the mouse wheel) to zoom.</p><div id="bact3d"></div><div class="chips" id="bchips"><button type="button" class="chip" data-p="Cell wall &amp; membrane">Cell wall &amp; membrane</button><button type="button" class="chip" data-p="Nucleoid (DNA)">Nucleoid (DNA)</button><button type="button" class="chip" data-p="Plasmid">Plasmids</button><button type="button" class="chip" data-p="Ribosome">Ribosomes</button><button type="button" class="chip" data-p="Flagellum">Flagella</button><button type="button" class="chip" data-p="Pilus">Pili</button></div><div id="bactinfo" class="binfo">Tap a part of the cell, or one of the buttons above, to learn about it.</div></div>
+    <div class="card" style="grid-column:1/-1"><h3>3D Model: Gene Cloning with Restriction Enzymes</h3><p>How a desired gene is cut out with a restriction enzyme, joined into a plasmid and transferred into a bacterium. Click the buttons to see each step and the different types of cuts. Drag the model to rotate it.</p><div id="gene3d"></div><div class="chips" id="gsteps"><b style="align-self:center;font-size:.8rem;color:var(--accent)">Cloning steps:</b><button type="button" class="chip on" data-s="1">1 Isolate</button><button type="button" class="chip" data-s="2">2 Cut</button><button type="button" class="chip" data-s="3">3 Ligate</button><button type="button" class="chip" data-s="4">4 Transform</button><button type="button" class="chip" data-s="5">5 Express</button></div><div class="chips" id="gcuts"><b style="align-self:center;font-size:.8rem;color:var(--accent)">Types of cuts:</b><button type="button" class="chip" data-c="eco">Sticky end: 5′ overhang (EcoRI)</button><button type="button" class="chip" data-c="pst">Sticky end: 3′ overhang (PstI)</button><button type="button" class="chip" data-c="sma">Blunt end (SmaI)</button></div><div id="geneinfo" class="binfo"></div></div>
+  </div>
+</section>
+
+<section id="training" class="fade">
+  <span class="sub">Experience</span><h2>Internships, training &amp; certifications</h2>
+  <div class="timeline">
+    <div class="card"><h3>Diagnostic Laboratory Intern</h3><p>Divine Lab (ICMR-approved), Fatehgunj, Vadodara · 8 May – 8 Jun 2026</p><ul><li>Phlebotomy, sample collection, labelling and report management</li><li>Haematology: CBC on Sysmex analyzer, Leishman-stained blood smears, urine routine</li><li>Biochemistry and immunology: glucose, HbA1c, lipid, LFT, KFT, thyroid; ELISA (HIV, HBsAg, HCV, Dengue NS1); Cobas e411 ECL</li><li>Serology: Widal, VDRL, RA, CRP, ASO</li><li>Molecular biology: three-zone PCR lab workflow, RT-PCR principles, DNA extraction, gel electrophoresis</li><li>Daily quality control using Levey-Jennings charts and Westgard rules</li><li>Completed all 22 working days with 100% attendance</li></ul><p>Supervisor: Dr. Kaushik A. Patel, M.D. (Pathology &amp; Bacteriology). Described as sincere, disciplined and hardworking.</p></div>
+    <div class="card"><h3>National Seminar: Biosafety &amp; Biosecurity for Pandemic Preparedness</h3><p>Certificate of Participation · Gujarat Biotechnology Research Centre (GBRC), Dept. of Science &amp; Technology, Govt. of Gujarat · 13 January 2026</p></div>
+  </div>
+</section>
+
+<section id="careers" class="fade">
+  <span class="sub">Career Interests</span><h2>Roles I am targeting</h2>
+  <div class="grid">
+    <div class="card"><h3>Quality Control (QC)</h3><p>Testing raw materials and products against specifications using validated methods.</p></div>
+    <div class="card"><h3>Quality Assurance (QA)</h3><p>Maintaining systems, SOPs, audits and documentation for GMP/GLP compliance.</p></div>
+    <div class="card"><h3>Research</h3><p>Research Associate or trainee roles in molecular biology, microbiology and biotech labs.</p></div>
+    <div class="card"><h3>Regulatory Affairs</h3><p>Preparing and reviewing dossiers and documents for regulatory submissions.</p></div>
+    <div class="card"><h3>Clinical Research</h3><p>Supporting clinical trials, data handling and documentation as a trainee.</p></div>
+    <div class="card"><h3>Production &amp; Bioinformatics</h3><p>Bioprocess trainee roles and sequence or data analysis support.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="fade">
+  <span class="sub">Contact</span><h2>Let’s connect</h2>
+  <div class="grid">
+    <div class="card contact-list">
+      <p>📧 <a href="mailto:ayeshadhukka4@gmail.com">ayeshadhukka4@gmail.com</a></p>
+      <p>📞 <a href="tel:+919004032784">+91 90040 32784</a></p>
+      <p>💬 <a href="https://wa.me/919004032784" rel="noopener">WhatsApp</a></p>
+      <p>🔗 <a href="https://www.linkedin.com/in/ayisha-akbar-37600b378" rel="noopener" target="_blank">LinkedIn Profile</a></p>
+      <p>📍 Vadodara, Gujarat (originally from Mumbai)</p>
+    </div>
+    <div class="card">
+      <form id="cf">
+        <input id="n" placeholder="Your name" required>
+        <input id="e" type="email" placeholder="Your email" required>
+        <textarea id="m" rows="4" placeholder="Your message" required></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Ayisha Akbar Dhukka · Biotechnology · <a href="#home">Back to top</a></footer>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// Contact form opens the visitor's email app with the message filled in
+document.getElementById('cf').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var n=document.getElementById('n').value,e=document.getElementById('e').value,m=document.getElementById('m').value;
+  location.href='mailto:ayeshadhukka4@gmail.com?subject='+encodeURIComponent('Portfolio enquiry from '+n)+'&body='+encodeURIComponent(m+'\n\nReply to: '+e);
+});
+// Fade-in on scroll
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.1});
+document.querySelectorAll('.fade').forEach(function(s){io.observe(s)});
+// Back to top
+var t=document.getElementById('top');
+addEventListener('scroll',function(){t.classList.toggle('show',scrollY>400)});
+t.onclick=function(){scrollTo({top:0,behavior:'smooth'})};
+
+// 3D bacterium (three.js): wall, nucleoid, plasmids, ribosomes, flagella, pili
+(function(){
+  var el=document.getElementById('bact3d');
+  if(!el||!window.THREE)return;
+  try{
+    var scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.1,100);
+    cam.position.set(0,0,6.5);
+    var ren=new THREE.WebGLRenderer({antialias:true,alpha:true});
+    ren.localClippingEnabled=true;
+    ren.setPixelRatio(Math.min(window.devicePixelRatio,2));
+    el.appendChild(ren.domElement);
+    scene.add(new THREE.AmbientLight(0xffffff,.6));
+    var l1=new THREE.PointLight(0xb9a6f0,1.2);l1.position.set(4,4,5);scene.add(l1);
+    var l2=new THREE.PointLight(0x9fc5ff,.8);l2.position.set(-4,-2,3);scene.add(l2);
+
+    function mat(c,o){return new THREE.MeshPhongMaterial({color:c,transparent:o<1,opacity:o,shininess:80,side:THREE.DoubleSide})}
+    var cell=new THREE.Group(),wall=mat(0x6a3fb0,.35);
+    // Names and short descriptions shown when a part is touched
+    var INFO={
+      'Cell wall & membrane':'<b>Function:</b> protects the cell, gives it shape and controls what enters and leaves.<br><b>Structure:</b> a peptidoglycan wall outside a phospholipid cell membrane. Gram-positive bacteria have a thick wall; Gram-negative bacteria have a thin wall plus an outer membrane.<br><b>Why it matters:</b> Gram staining and many antibiotics, such as penicillin, target the cell wall.',
+      'Nucleoid (DNA)':'<b>Function:</b> holds the main chromosome that controls the cell.<br><b>Structure:</b> one long, circular DNA molecule, tightly coiled, with no membrane around it. Bacteria are prokaryotes, so they have no true nucleus.<br><b>Why it matters:</b> its genes are what PCR and sequencing use to identify bacteria.',
+      'Plasmid':'<b>Function:</b> carries extra, non-essential genes.<br><b>Structure:</b> small, circular, double-stranded DNA that copies itself separately from the chromosome.<br><b>Why it matters:</b> plasmids often carry antibiotic resistance genes and can pass between bacteria. They are also used as vectors in genetic engineering.',
+      'Ribosome':'<b>Function:</b> builds proteins by reading mRNA.<br><b>Structure:</b> 70S ribosomes made of a 30S and a 50S subunit (rRNA and protein).<br><b>Why it matters:</b> antibiotics such as tetracycline and erythromycin block bacterial ribosomes, and 16S rRNA is used to identify bacteria.',
+      'Flagellum':'<b>Function:</b> movement (motility) towards food or away from harmful substances.<br><b>Structure:</b> a long protein filament (flagellin) turned by a rotary motor in the cell envelope.<br><b>Why it matters:</b> motility is checked in microbiology labs, for example with a hanging drop or motility medium.',
+      'Pilus':'<b>Function:</b> attaches the cell to surfaces and to other cells.<br><b>Structure:</b> thin, hair-like protein tubes (pili or fimbriae). A sex pilus links two bacteria for conjugation.<br><b>Why it matters:</b> attachment helps bacteria form biofilms and cause infection, and conjugation spreads plasmids.'
+    };
+    function tag(m,n){m.userData.name=n;return m}
+    // Cutaway: a clipping plane that hides the front half of the wall so the inside is visible
+    var clip=new THREE.Plane(new THREE.Vector3(0,0,-1),10),isOpen=false,tz=6.5,ct=10;
+    wall.clippingPlanes=[clip];
+    var zf=1;
+    function setZ(){tz=Math.max(2.2,Math.min(9,(isOpen?4.6:6.5)*zf))}
+    function setOpen(v){isOpen=v;ct=v?0:10;setZ()}
+
+    // Cell wall: a cylinder with two half-sphere caps
+    cell.add(tag(new THREE.Mesh(new THREE.CylinderGeometry(.6,.6,1.8,32,1,true),wall),'Cell wall & membrane'));
+    [0,1].forEach(function(i){
+      var cap=new THREE.Mesh(new THREE.SphereGeometry(.6,32,16,0,Math.PI*2,i?Math.PI/2:0,Math.PI/2),wall);
+      cap.position.y=i?-.9:.9;cell.add(tag(cap,'Cell wall & membrane'));
+    });
+
+    // Nucleoid: a coiled tube of DNA
+    var pts=[];
+    for(var i=0;i<=40;i++)pts.push(new THREE.Vector3(.25*Math.sin(i*.9),-.7+1.4*i/40,.25*Math.cos(i*1.3)));
+    cell.add(tag(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),120,.045,8,false),mat(0x9fc5ff,1)),'Nucleoid (DNA)'));
+
+    // Plasmids: two small rings
+    [[.3,.5,.1],[-.3,-.5,-.1]].forEach(function(p){
+      var t=new THREE.Mesh(new THREE.TorusGeometry(.1,.025,8,24),mat(0xffd27f,1));
+      t.position.set(p[0],p[1],p[2]);t.rotation.x=1;cell.add(tag(t,'Plasmid'));
+    });
+
+    // Ribosomes: tiny spheres scattered inside the cell
+    var seed=7;function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647}
+    var rg=new THREE.SphereGeometry(.05,8,8),rm=mat(0xe0b0ff,1);
+    for(var k=0;k<45;k++){
+      var a=rnd()*6.28,rad=.45*Math.sqrt(rnd()),r=new THREE.Mesh(rg,rm);
+      r.position.set(rad*Math.cos(a),-.8+1.6*rnd(),rad*Math.sin(a));cell.add(tag(r,'Ribosome'));
+    }
+
+    // Flagella: long wavy tubes from one end
+    [0,2.5].forEach(function(ph){
+      var fp=[];
+      for(var j=0;j<=30;j++){var t=j/30;fp.push(new THREE.Vector3(.15*Math.sin(t*18+ph),-1.4-t*1.8,.15*Math.cos(t*18+ph)))}
+      cell.add(tag(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(fp),80,.035,6,false),mat(0xf0c0ff,1)),'Flagellum'));
+    });
+
+    // Pili: short hairs pointing outwards
+    var pg=new THREE.CylinderGeometry(.02,.02,.35,6),pm=mat(0xb9a6f0,1);
+    for(var q=0;q<24;q++){
+      var ang=rnd()*6.28,dir=new THREE.Vector3(Math.cos(ang),0,Math.sin(ang)),h=new THREE.Mesh(pg,pm);
+      h.position.set(dir.x*.78,-.8+1.6*rnd(),dir.z*.78);
+      h.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),dir);cell.add(tag(h,'Pilus'));
+    }
+
+    // Lay the cell on its side and let it spin
+    cell.rotation.z=Math.PI/2.5;
+    var pivot=new THREE.Group();pivot.add(cell);scene.add(pivot);
+
+    function size(){var w=el.clientWidth,h=el.clientHeight;ren.setSize(w,h);cam.aspect=w/h;cam.updateProjectionMatrix()}
+    size();window.addEventListener('resize',size);
+
+    // Drag to rotate
+    var drag=false,lx=0,ly=0,moved=0,pause=0;
+    // Label box shown over the model
+    var tip=document.createElement('div');
+    tip.style.cssText='position:absolute;left:10px;right:10px;bottom:10px;padding:8px 12px;border-radius:10px;background:rgba(5,6,15,.8);border:1px solid rgba(185,166,240,.3);color:#e8eaf6;font-size:.85rem;line-height:1.4;pointer-events:none';
+    tip.textContent='Tap any part to see its name.';
+    el.style.position='relative';el.appendChild(tip);
+    // Zoom controls: + / - / reset buttons and mouse wheel
+    function zoomBy(f){zf=f?Math.max(.3,Math.min(1.8,zf*f)):1;setZ()}
+    var zc=document.createElement('div');
+    zc.style.cssText='position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:6px';
+    [['+',.8,'Zoom in'],['−',1.25,'Zoom out'],['↺',0,'Reset zoom']].forEach(function(b){
+      var z=document.createElement('button');z.type='button';z.textContent=b[0];z.setAttribute('aria-label',b[2]);
+      z.style.cssText='width:34px;height:34px;border-radius:50%;border:1px solid rgba(185,166,240,.5);background:rgba(45,27,78,.85);color:#fff;font-size:18px;line-height:1;cursor:pointer;padding:0';
+      z.addEventListener('click',function(){zoomBy(b[1])});
+      zc.appendChild(z);
+    });
+    zc.addEventListener('pointerdown',function(e){e.stopPropagation()});
+    el.appendChild(zc);
+    el.addEventListener('wheel',function(e){e.preventDefault();zoomBy(e.deltaY<0?.9:1.1)},{passive:false});
+    var ray=new THREE.Raycaster(),mv=new THREE.Vector2();
+    // Information panel and part buttons under the model
+    var info=document.getElementById('bactinfo'),chips=[].slice.call(document.querySelectorAll('#bchips .chip'));
+    function show(n){
+      tip.innerHTML='<b>'+n+'</b>'+(n==='Nucleoid (DNA)'?' (cell opened, tap the wall to close)':'');
+      if(info)info.innerHTML='<b style="font-size:1rem">'+n+'</b><br>'+INFO[n];
+      chips.forEach(function(c){c.classList.toggle('on',c.getAttribute('data-p')===n)});
+    }
+    chips.forEach(function(c){c.addEventListener('click',function(){
+      var n=c.getAttribute('data-p');
+      if(n==='Nucleoid (DNA)')setOpen(true);else if(n==='Cell wall & membrane'&&isOpen)setOpen(false);
+      hl(n);pause=300;show(n);
+    })});
+    // Make every part with this name glow
+    function hl(name){cell.children.forEach(function(m){if(m.material)m.material.emissive.setHex(m.userData.name===name?0x7a5cff:0x000000)})}
+    // Find the touched part (inner parts win over the see-through wall)
+    function pick(e){
+      var b=ren.domElement.getBoundingClientRect();
+      mv.set((e.clientX-b.left)/b.width*2-1,-((e.clientY-b.top)/b.height)*2+1);
+      ray.setFromCamera(mv,cam);
+      var hits=ray.intersectObjects(cell.children,false).filter(function(h){return h.object.userData.name}),best=null;
+      hits.forEach(function(h){if(!best&&h.object.userData.name!=='Cell wall & membrane')best=h});
+      if(!best)best=hits[0];
+      if(!best){hl('');setOpen(false);tip.textContent='Tap any part to see its name.';return}
+      var n=best.object.userData.name;
+      if(n==='Nucleoid (DNA)')setOpen(true);
+      else if(n==='Cell wall & membrane'&&isOpen){setOpen(false);hl('');tip.textContent='Tap any part to see its name.';return}
+      hl(n);pause=300;
+      show(n);
+    }
+    el.addEventListener('pointerdown',function(e){drag=true;moved=0;lx=e.clientX;ly=e.clientY;el.style.cursor='grabbing'});
+    window.addEventListener('pointerup',function(e){var was=drag;drag=false;el.style.cursor='grab';if(was&&moved<6&&el.contains(e.target))pick(e)});
+    window.addEventListener('pointercancel',function(){drag=false;el.style.cursor='grab'});
+    window.addEventListener('pointermove',function(e){
+      if(!drag)return;
+      moved+=Math.abs(e.clientX-lx)+Math.abs(e.clientY-ly);
+      pivot.rotation.y+=(e.clientX-lx)*.01;pivot.rotation.x+=(e.clientY-ly)*.01;lx=e.clientX;ly=e.clientY;
+    });
+
+    (function loop(){
+      requestAnimationFrame(loop);
+      clip.constant+=(ct-clip.constant)*.08;cam.position.z+=(tz-cam.position.z)*.08;
+      if(pause>0)pause--;else if(!drag&&!isOpen)pivot.rotation.y+=.005;
+      ren.render(scene,cam);
+    })();
+  }catch(err){el.innerHTML='<p style="padding:20px;color:#a3a9c7">3D view is not supported on this device.</p>'}
+})();
+
+// Gene cloning model (three.js): cloning steps + types of restriction cuts
+(function(){
+  var el=document.getElementById('gene3d');
+  if(!el||!window.THREE)return;
+  try{
+    var scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.1,100);
+    cam.position.set(0,0,8.5);
+    var ren=new THREE.WebGLRenderer({antialias:true,alpha:true});
+    ren.setPixelRatio(Math.min(window.devicePixelRatio,2));
+    el.appendChild(ren.domElement);
+    scene.add(new THREE.AmbientLight(0xffffff,.65));
+    var l1=new THREE.PointLight(0xb9a6f0,1.2);l1.position.set(4,4,6);scene.add(l1);
+    var l2=new THREE.PointLight(0x9fc5ff,.8);l2.position.set(-4,-2,4);scene.add(l2);
+    function mat(c,o){o=o||1;return new THREE.MeshPhongMaterial({color:c,transparent:o<1,opacity:o,shininess:70,side:THREE.DoubleSide})}
+    var root=new THREE.Group();scene.add(root);
+    var cloneG=new THREE.Group(),cutG=new THREE.Group();root.add(cloneG);root.add(cutG);
+
+    // ---- Part 1: cloning steps. Each object has a position/scale for each of the 5 steps (null = hidden)
+    var acts=[];
+    function U(x,y,z,s){return [x,y,z,s===undefined?1:s]}
+    function A(o,parent,cfg){
+      parent.add(o);
+      var f=cfg.filter(Boolean)[0]||[0,0,0,0];
+      acts.push({o:o,cfg:cfg,tp:new THREE.Vector3(f[0],f[1],f[2]),ts:0});
+      return o;
+    }
+    function cyl(len,r,c){var m=new THREE.Mesh(new THREE.CylinderGeometry(r,r,len,16),mat(c));m.rotation.z=Math.PI/2;var g=new THREE.Group();g.add(m);return g}
+    function box(){return new THREE.Mesh(new THREE.BoxGeometry(.12,.4,.4),mat(0xff6b6b))}
+    function enz(){return new THREE.Mesh(new THREE.DodecahedronGeometry(.28),mat(0xa56bff))}
+
+    // Donor DNA: left piece, gene of interest (gold), right piece
+    A(cyl(1.4,.09,0x6f8fd8),cloneG,[U(-1.4,1.2,0),U(-2.2,1.2,0),null,null,null]);
+    A(cyl(1.4,.09,0x6f8fd8),cloneG,[U(1.4,1.2,0),U(2.2,1.2,0),null,null,null]);
+    A(cyl(1.4,.14,0xffc94d),cloneG,[U(0,1.2,0),U(0,1.2,0),U(0,-.1,0,0),null,null]);
+    // Restriction sites (red) and restriction enzymes (purple)
+    A(box(),cloneG,[U(-.7,1.2,0),null,null,null,null]);
+    A(box(),cloneG,[U(.7,1.2,0),null,null,null,null]);
+    A(box(),cloneG,[U(0,-.1,0),null,null,null,null]);
+    A(enz(),cloneG,[null,U(-.7,1.2,.45),null,null,null]);
+    A(enz(),cloneG,[null,U(.7,1.2,.45),null,null,null]);
+    A(enz(),cloneG,[null,U(0,-.1,.5),null,null,null]);
+    // DNA ligase (orange)
+    A(new THREE.Mesh(new THREE.SphereGeometry(.2,16,16),mat(0xff9f43)),cloneG,[null,null,U(0,-.1,.5),null,null]);
+    // Plasmid: closed ring, then opened ring, then ring with the gene inserted
+    var R=1,th=1.5;
+    function ring(arc,c,rz){var m=new THREE.Mesh(new THREE.TorusGeometry(R,.09,12,64,arc),mat(c));m.rotation.z=rz;return m}
+    var pl=A(new THREE.Group(),cloneG,[U(0,-1.1,0),U(0,-1.1,0),U(0,-1.1,0),U(0,-1.1,0,.5),U(0,-1.1,0,.5)]);
+    A(ring(Math.PI*2,0x4aa3ff,0),pl,[U(0,0,0),null,null,null,null]);
+    A(ring(Math.PI*2-th,0x4aa3ff,Math.PI/2+th/2),pl,[null,U(0,0,0),U(0,0,0),U(0,0,0),U(0,0,0)]);
+    A(ring(th,0xffc94d,Math.PI/2-th/2),pl,[null,null,U(0,0,0),U(0,0,0),U(0,0,0)]);
+    // Host bacterium
+    var bac=new THREE.Group(),bm=mat(0x6a3fb0,.3),bc=new THREE.Mesh(new THREE.CylinderGeometry(.85,.85,2.6,32,1,true),bm);
+    bc.rotation.z=Math.PI/2;bac.add(bc);
+    [0,1].forEach(function(i){var s=new THREE.Mesh(new THREE.SphereGeometry(.85,32,16,0,Math.PI*2,0,Math.PI/2),bm);s.position.x=i?1.3:-1.3;s.rotation.z=i?-Math.PI/2:Math.PI/2;bac.add(s)});
+    A(bac,cloneG,[null,null,null,U(0,-1.1,0),U(0,-1.1,0)]);
+    // Protein made from the gene (gold dots)
+    var prot=new THREE.Group();
+    for(var i=0;i<16;i++){var a=i/16*6.28,d=new THREE.Mesh(new THREE.SphereGeometry(.09,10,10),mat(0xffc94d));d.position.set(2.5*Math.cos(a),1.4*Math.sin(a),0);prot.add(d)}
+    A(prot,cloneG,[null,null,null,null,U(0,-1.1,0)]);
+    function goStep(n){acts.forEach(function(a){var c=a.cfg[n-1];if(c){a.tp.set(c[0],c[1],c[2]);a.ts=c[3]}else a.ts=0})}
+    goStep(1);
+    acts.forEach(function(a){a.o.position.copy(a.tp);a.o.scale.setScalar(Math.max(a.ts,.001));a.o.visible=a.ts>.02});
+
+    // ---- Part 2: types of cuts on a DNA ladder (each strand is cut at its own position)
+    var comp={A:'T',T:'A',G:'C',C:'G'},col={A:0x4ade80,T:0xf87171,G:0xfbbf24,C:0x60a5fa};
+    var CUTS={eco:{site:'GAATTC',a:5,b:9},pst:{site:'CTGCAG',a:9,b:5},sma:{site:'CCCGGG',a:7,b:7}};
+    var cl=new THREE.Group(),cr=new THREE.Group(),cp=0,cpt=0,sg=new THREE.SphereGeometry(.1,12,12);
+    cutG.add(cl);cutG.add(cr);cutG.scale.setScalar(1.3);
+    var ce=enz();ce.position.set(0,.95,0);ce.scale.setScalar(.8);cutG.add(ce);
+    function bb(g,x,y){var m=new THREE.Mesh(new THREE.CylinderGeometry(.03,.03,.3,6),mat(0xcfd3ee));m.rotation.z=Math.PI/2;m.position.set(x,y,0);g.add(m)}
+    function buildCut(k){
+      [cl,cr].forEach(function(g){while(g.children.length)g.remove(g.children[0])});
+      var c=CUTS[k],seq='ATCG'+c.site+'TAGC';
+      for(var i=0;i<14;i++){
+        var x=(i-6.5)*.3,t=seq[i],b=comp[t],ts=i<c.a?cl:cr,bs=i<c.b?cl:cr;
+        var s1=new THREE.Mesh(sg,mat(col[t]));s1.position.set(x,.28,0);ts.add(s1);
+        var s2=new THREE.Mesh(sg,mat(col[b]));s2.position.set(x,-.28,0);bs.add(s2);
+        if(ts===bs){var r=new THREE.Mesh(new THREE.CylinderGeometry(.025,.025,.56,6),mat(0xcfd3ee));r.position.set(x,0,0);ts.add(r)}
+        if(i<13){
+          if((i<c.a)===(i+1<c.a))bb(ts,x+.15,.28);
+          if((i<c.b)===(i+1<c.b))bb(bs,x+.15,-.28);
+        }
+      }
+    }
+    cutG.visible=false;
+
+    // ---- Information shown when a button is clicked
+    var STEP=[
+      '<b>Step 1: Isolate the gene and the vector.</b><br>The gene we want (gold), such as the human insulin gene, is part of donor DNA. A plasmid (blue ring) from a bacterium is the vector that will carry it. Both contain the same restriction site (red).',
+      '<b>Step 2: Cut with the same restriction enzyme.</b><br>Restriction enzymes come from bacteria, which use them to cut the DNA of invading viruses. An enzyme (purple) such as EcoRI recognises the palindromic site GAATTC and cuts on both sides of the gene and once in the plasmid. This frees the gene and opens the plasmid, leaving matching sticky ends.',
+      '<b>Step 3: Ligation.</b><br>The gene and the opened plasmid are mixed. Their sticky ends pair by hydrogen bonds, and DNA ligase (orange) seals the sugar-phosphate backbone. The result is recombinant DNA.',
+      '<b>Step 4: Transformation.</b><br>The recombinant plasmid is put into a host bacterium such as E. coli, usually by calcium chloride treatment with heat shock, or by electroporation.',
+      '<b>Step 5: Selection and expression.</b><br>Cells that took up the plasmid are selected with an antibiotic, because the plasmid also carries a resistance gene. They multiply, copy the plasmid and make the protein (gold dots) from the inserted gene. This is how insulin, growth hormone and some vaccines are produced.'
+    ];
+    var KEY=' <br><i>Colours: A green, T red, G yellow, C blue. Click the button again to replay the cut.</i>';
+    var CUT={
+      eco:'<b>EcoRI: G^AATTC (sticky end, 5′ overhang)</b><br>The enzyme cuts the two strands at different points, leaving single-stranded 5′ overhangs (AATT). These ends pair easily with any fragment cut by the same enzyme, so ligation is efficient.'+KEY,
+      pst:'<b>PstI: CTGCA^G (sticky end, 3′ overhang)</b><br>The strands are cut at different points, leaving single-stranded 3′ overhangs (TGCA). They are also sticky and pair with ends cut by the same enzyme.'+KEY,
+      sma:'<b>SmaI: CCC^GGG (blunt end)</b><br>Both strands are cut at the same point, so there are no overhangs. Blunt ends can join to any other blunt end, but ligation is less efficient and needs more ligase.'+KEY
+    };
+    var info=document.getElementById('geneinfo'),sb=[].slice.call(document.querySelectorAll('#gsteps [data-s]')),cb=[].slice.call(document.querySelectorAll('#gcuts [data-c]'));
+    function mark(list,attr,val){list.forEach(function(b){b.classList.toggle('on',b.getAttribute(attr)===val)})}
+    sb.forEach(function(b){b.addEventListener('click',function(){
+      var n=b.getAttribute('data-s');cloneG.visible=true;cutG.visible=false;goStep(+n);
+      mark(sb,'data-s',n);mark(cb,'data-c','');info.innerHTML=STEP[n-1];
+    })});
+    cb.forEach(function(b){b.addEventListener('click',function(){
+      var k=b.getAttribute('data-c');cloneG.visible=false;cutG.visible=true;buildCut(k);cp=0;cpt=1;
+      mark(cb,'data-c',k);mark(sb,'data-s','');info.innerHTML=CUT[k];
+    })});
+    info.innerHTML=STEP[0];
+
+    function size(){var w=el.clientWidth,h=el.clientHeight;ren.setSize(w,h);cam.aspect=w/h;cam.updateProjectionMatrix()}
+    size();window.addEventListener('resize',size);
+    var drag=false,lx=0,ly=0,ry=0,rx=0;
+    el.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;ly=e.clientY});
+    window.addEventListener('pointerup',function(){drag=false});
+    window.addEventListener('pointercancel',function(){drag=false});
+    window.addEventListener('pointermove',function(e){
+      if(!drag)return;
+      ry+=(e.clientX-lx)*.008;rx=Math.max(-.6,Math.min(.6,rx+(e.clientY-ly)*.008));lx=e.clientX;ly=e.clientY;
+    });
+    (function loop(t){
+      requestAnimationFrame(loop);
+      acts.forEach(function(a){var o=a.o;o.position.lerp(a.tp,.08);var s=o.scale.x+(a.ts-o.scale.x)*.08;o.scale.setScalar(Math.max(s,.001));o.visible=s>.02});
+      cp+=(cpt-cp)*.06;cl.position.x=-.45*cp;cr.position.x=.45*cp;
+      root.rotation.y=ry+.18*Math.sin(t*.0008);root.rotation.x=rx;
+      ren.render(scene,cam);
+    })(0);
+  }catch(err){el.innerHTML='<p style="padding:20px;color:#a3a9c7">3D view is not supported on this device.</p>'}
+})();
+</script>
+</body>
+</html>
